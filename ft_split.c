@@ -6,13 +6,13 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:06:21 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/26 19:13:16 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/04/28 17:49:49 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int contador(char *str, char x)
+int	cont_palavras(const char *str, char x)
 {
 	int	count;
 
@@ -31,16 +31,50 @@ int contador(char *str, char x)
 	return (count);
 }
 
-char	**ft_split(char const *s, char c)
+static char	*separ_palavras(const char *s, char c)
 {
-	char	**memory;
-	char	*p;
-	int		cont;
+	char	*word;
 	int		i;
-	cont = contador(s, c);
-	memory = malloc((cont + 1) * sizeof(char *));
-	if (!memory)
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	word = (char *) malloc(sizeof(char) * (i + 1));
+	if (!word)
 		return (NULL);
 	i = 0;
-	p = 
+	while (s[i] && s[i] != c)
+	{
+		word[i] = s[i];
+		i++;
+	}
+	word[i] = '\0';
+	return (word);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		i;
+	int		j;
+	char	**words;
+
+	i = 0;
+	j = 0;
+	words = (char **) malloc(sizeof(char *) * (cont_palavras(s, c) + 1));
+	if (!words || !s)
+		return (NULL);
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			words[j] = separ_palavras(&s[i], c);
+			while (s[i] && s[i] != c)
+				i++;
+			j++;
+		}
+		else
+			i++;
+	}
+	words[j] = 0;
+	return (words);
 }
