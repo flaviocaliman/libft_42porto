@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 13:52:06 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/29 14:11:19 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 18:35:21 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,22 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	final_str[slen] = '\0';
 	return (final_str);
 }
+/*
+char transform(unsigned int i, char c) {
+    if (i % 2 == 0) {
+        return ft_toupper(c);
+    } else {
+        return ft_tolower(c);
+    }
+}
+
+int main() {
+    char* s = "Exemplo de String";
+    char* transformed = ft_strmapi(s, &transform);
+
+    printf("String original: %s\n", s);
+    printf("String transformada: %s\n", transformed);
+    free(transformed);
+
+    return 0;
+}*/

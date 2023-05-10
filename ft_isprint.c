@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:49:21 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/17 17:45:32 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:30:00 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,8 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+		printf("%i\n\n", ft_isprint('$'));
+}*/

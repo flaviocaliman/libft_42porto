@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:26:56 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/17 17:35:12 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:33:13 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,8 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+
+/*int	main(void)
+{
+	printf("%c\n\n", ft_toupper('a'));
+}*/

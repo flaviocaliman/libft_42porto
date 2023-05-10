@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 15:42:10 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/17 17:44:11 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:28:30 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,8 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+		printf("%i\n\n", ft_isalnum(' '));
+}*/

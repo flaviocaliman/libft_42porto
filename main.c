@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:52:13 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/05/02 15:16:03 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/06 14:35:39 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int main (void)
 	char s5[] = "Flavio";
 	printf("%s\n", ft_strrchr(s5, 'a'));
 	printf("Posicao do caracter: %ld\n\n", ft_strrchr(s5, 'a') - s5);
-	printf("---ft_strnchr---\n");
+	printf("---ft_strnstr---\n");
 	const char big[] = "Hello, world!";
     const char little[] = " ";
 	char *result = ft_strnstr(big, little, 10);
@@ -134,7 +134,15 @@ int main (void)
 	printf("---ft_striteri---\n");
 	printf("Nao fiz main para testar a ft_striteri())\n\n");
 	printf("---ft_lstnew---\n");
-	printf("Nao fiz main para testar a ft_lstnew()\n\n");
+	t_list *newNode = ft_lstnew("Flavio Caliman");
+	if (newNode == NULL)
+	{
+		printf("Erro: falha ao alocar memoria");
+		return (1);
+	}
+	printf("Conteudo do novo no: %s\n\n", (char*)(newNode->content));
+	free(newNode);
+	return (0);
 	printf("---ft_lstadd_front---\n");
 	printf("Nao fiz main para testar a ft_lstadd_front()\n\n");
 	printf("---ft_lstsize---\n");

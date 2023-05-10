@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:50:32 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/25 14:04:13 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:45:07 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,10 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *) s);
 	return (NULL);
 }
+
+/*int	main(void)
+{
+	char s4[] = "Flavio";
+	printf("%s\n", ft_strchr(s4, 'v'));
+	printf("Posicao do caracter: %ld\n\n", ft_strchr(s4, 'v') - s4);
+}*/

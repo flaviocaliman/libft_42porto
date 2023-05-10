@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:22:04 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/17 17:45:09 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:34:03 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,8 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
+
+/*int	main(void)
+{
+	printf("%c\n\n", ft_tolower('A'));
+}*/

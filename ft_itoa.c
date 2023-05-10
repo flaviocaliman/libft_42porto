@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 19:30:54 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/28 16:39:56 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 17:18:01 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,3 +65,10 @@ char	*ft_itoa(int n)
 	str[i--] = '\0';
 	return (int_to_str(str, l, i));
 }
+/*
+int	main(void)
+{
+	int n = 1036;
+	char *itoa = ft_itoa(n);
+	printf("%s\n\n", itoa);
+}*/

@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 13:52:50 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/30 14:25:57 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/06 15:39:38 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,19 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
+/*
+int main(void)
+{
+	t_list	*list;
+	t_list	*newNode;
+	
+	list = NULL;
+	list = ft_lstnew("Flavio");
+	newNode = ft_lstnew("Caliman");
+	ft_lstadd_front(&list, newNode);
+	newNode = ft_lstnew("!");
+	ft_lstadd_front(&list, newNode);
+	int	size = ft_lstsize(list);
+	printf("Tamanho da lista: %d\n", size);
+	return (0);
+}*/

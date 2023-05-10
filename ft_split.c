@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:06:21 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/28 17:49:49 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 18:29:23 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,3 +78,18 @@ char	**ft_split(char const *s, char c)
 	words[j] = 0;
 	return (words);
 }
+/*
+int main() {
+    char str[] = "hello world, how are you?";
+    char **words = ft_split(str, ' ');
+    if (!words) {
+        printf("Erro: não foi possível alocar memória.\n");
+        return 1;
+    }
+    for (int i = 0; words[i] != NULL; i++) {
+        printf("%s\n", words[i]);
+        free(words[i]);
+    }
+    free(words);
+    return 0;
+}*/

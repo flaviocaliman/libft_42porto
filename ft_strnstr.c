@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:01:30 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/25 14:41:48 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:51:12 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+/*int	main(void)
+{
+	const char big[] = "Hello, world!";
+    const char little[] = " ";
+	char *result = ft_strnstr(big, little, 10);
+    if (result != NULL)
+        printf("Substring encontrada: %s\n\n", result);
+    else
+    {
+		printf("Substring nao encontrada\n\n");
+	}
+}*/

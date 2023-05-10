@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 15:45:25 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/17 17:37:01 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:31:47 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[n] = '\0';
 	return (dlen + slen);
 }
+
+/*int	main(void)
+{
+	char d1[] = "Flavio";
+	const char s1[] = " Caliman";
+	printf("%lu\n\n", ft_strlcat(d1, s1, 20));
+}*/

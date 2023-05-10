@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 17:26:30 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/04/22 16:35:27 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 16:01:05 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(result * sinal));
 }
+
+/*int	main(void)
+{
+	char nptr[] = "-12345";
+	int num = ft_atoi(nptr);
+	printf("%i\n\n", num);
+}*/

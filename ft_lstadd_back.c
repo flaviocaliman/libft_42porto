@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 13:03:08 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/05/01 14:16:06 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/06 17:27:52 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,17 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 			last = last->next;
 		last->next = new;
 	}
-}	
+}
+/*
+int main(void)
+{
+	t_list	*begin, *node01, *node02, *lastNode;
+	
+	begin = NULL;
+	node01 = ft_lstnew("Flavio");
+	node02 = ft_lstnew("Caliman");
+	ft_lstadd_back(&begin, node01);
+	ft_lstadd_back(&begin, node02);
+	lastNode = ft_lstlast(begin);
+	printf("Ultimo conteudo: %s\n", (char *)lastNode->content);
+}*/
