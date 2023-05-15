@@ -6,7 +6,7 @@
 /*   By: fgomes-c <fgomes-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/01 14:31:19 by fgomes-c          #+#    #+#             */
-/*   Updated: 2023/05/07 18:39:12 by fgomes-c         ###   ########.fr       */
+/*   Updated: 2023/05/13 14:53:23 by fgomes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-
+/*
 void	del_content(void *node)
 {
 	node = NULL;
@@ -45,4 +45,4 @@ int main(void)
 	printf("%s -> %s\n", (char *)(cont02->content), (char *)(cont03->content));
 	
 	return (0);
-}
+}*/
